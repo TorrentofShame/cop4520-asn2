@@ -4,7 +4,7 @@ use std::sync::{atomic::AtomicBool, atomic::Ordering, mpsc, Arc};
 use std::thread;
 use std::thread::JoinHandle;
 
-const DEFAULT_NUM_GUESTS: i32 = 10;
+const DEFAULT_NUM_GUESTS: i32 = 100;
 
 fn main() {
     let is_cake_eaten = Arc::new(AtomicBool::new(false));
